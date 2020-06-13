@@ -1,61 +1,62 @@
-.footer__wrapper {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 10px;
-}
+.footer {
+  &__wrapper {
+    position: relative;
+    @extend %align-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
 
-.footer__description-wrapper::before {
-  display: block;
-  content: '';
-  background-color: rgb(153, 153, 153);
-  width: 1200px;
-  height: 1px;
-  margin-bottom: 50px;
-  position: absolute;
-  bottom: 5px;
-}
+  &__description-wrapper::before {
+    display: block;
+    content: '';
+    background-color: rgb(153, 153, 153);
+    width: 1200px;
+    height: 1px;
+    margin-bottom: 50px;
+    position: absolute;
+    bottom: 5px;
+  }
 
-.footer__description,
-.footer__link {
-  display: inline-block;
-  font-size: 14px;
-  font-family: $main-font;
-  font-weight: 400;
-  color: rgb(51, 51, 51);
-  line-height: 1.2;
-}
+  &__description,
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    font-family: $main-font;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+  }
 
-.footer__link {
-  color: #f38181;
+  &__link {
+    color: #f38181;
+  }
 }
 
 .form {
   display: flex;
-}
 
-.form__input {
-  width: 230px;
-  height: 40px;
-  padding-left: 10px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #000000;
-  font-family: $secondary-font;
-  font-weight: 300;
-  font-style: italic;
-}
+  &__input {
+    width: 230px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    font-family: $secondary-font;
+    font-weight: 300;
+    font-style: italic;
+  }
 
-.form__btn {
-  border: 0px;
-  width: 150px;
-  text-transform: uppercase;
-  background-color: rgb(149, 225, 211);
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  font-family: $main-font;
-  line-height: 1.2;
-  font-weight: bold;
+  &__btn {
+    border: 0px;
+    width: 150px;
+    text-transform: uppercase;
+    background-color: rgb(149, 225, 211);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: $main-font;
+    line-height: 1.2;
+    font-weight: bold;
+  }
 }
